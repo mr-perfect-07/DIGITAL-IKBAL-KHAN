@@ -35,7 +35,7 @@
             display: flex;
             justify-content: center;
             gap: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             flex-wrap: wrap;
         }
         .badge {
@@ -57,22 +57,50 @@
             background: linear-gradient(145deg, #1f0b3b, #33125f);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 15px;
-            padding: 15px;
-            margin-bottom: 20px;
+            padding: 12px;
+            margin-bottom: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
         h1 {
-            font-size: 24px;
+            font-size: 22px;
             color: #ffaa00;
             font-weight: 800;
             letter-spacing: 1px;
             text-shadow: 0 0 10px rgba(255, 170, 0, 0.4);
-            margin-bottom: 5px;
+            margin-bottom: 3px;
         }
         .subtitle {
-            font-size: 13px;
+            font-size: 12px;
             color: #cccccc;
-            margin-top: 5px;
+        }
+        /* Highlight Banner for $10 & Instant Income */
+        .highlight-banner {
+            background: linear-gradient(135deg, #ff7700, #ff2200);
+            border: 2px solid #ffcc00;
+            border-radius: 15px;
+            padding: 14px 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(255, 119, 0, 0.6);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+        .highlight-title {
+            font-size: 16px;
+            font-weight: 900;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+        }
+        .highlight-desc {
+            font-size: 12px;
+            font-weight: bold;
+            color: #fffacd;
+            margin-top: 4px;
         }
         .join-btn {
             display: block;
@@ -81,9 +109,9 @@
             font-size: 18px;
             font-weight: 800;
             text-decoration: none;
-            padding: 16px;
+            padding: 15px;
             border-radius: 35px;
-            margin: 20px 0 12px 0;
+            margin: 15px 0 10px 0;
             box-shadow: 0 5px 20px rgba(255, 170, 0, 0.5);
             transition: 0.3s ease;
         }
@@ -93,19 +121,19 @@
         .timer-text {
             font-size: 13px;
             color: #b3b3b3;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         .stat-card {
             background: rgba(15, 5, 33, 0.9);
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 12px;
-            padding: 12px 5px;
+            padding: 10px 5px;
             text-align: center;
         }
         .stat-label {
@@ -126,20 +154,20 @@
             background: rgba(15, 5, 33, 0.9);
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 12px;
-            padding: 14px;
+            padding: 12px;
             text-align: left;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
             gap: 12px;
         }
         .feature-icon {
-            font-size: 22px;
+            font-size: 20px;
         }
         .feature-title {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: bold;
-                color: #ffaa00;
+            color: #ffaa00;
         }
         .feature-desc {
             font-size: 11px;
@@ -163,14 +191,20 @@
             <p class="subtitle">Daily Salary & Community Support</p>
         </div>
 
+        <!-- Highlighted Banner for $10 & 100% Instant Referral -->
+        <div class="highlight-banner">
+            <div class="highlight-title">🔥 START WITH ONLY $10 🔥</div>
+            <div class="highlight-desc">100% Instant Referral Income & Global Non-Working Growth!</div>
+        </div>
+
         <!-- Direct Telegram Join Button -->
         <a href="https://t.me/Mr_Perfect_R7" class="join-btn" id="telegramLink">
             JOIN TELEGRAM FREE
         </a>
 
-        <!-- Timer Text (30 Seconds) -->
+        <!-- Timer Text (20 Seconds) -->
         <div class="timer-text">
-            Redirecting to Telegram in <span id="countdown" style="color: #ffaa00; font-weight: bold;">30</span> seconds...
+            Redirecting to Telegram in <span id="countdown" style="color: #ffaa00; font-weight: bold;">20</span> seconds...
         </div>
 
         <!-- Stats Boxes -->
@@ -193,23 +227,39 @@
         <div class="feature-card">
             <div class="feature-icon">💰</div>
             <div>
-                <div class="feature-title">Daily Growth & Updates</div>
-                <div class="feature-desc">Get daily salary related updates and support directly.</div>
+                <div class="feature-title">Daily Salary Rewards</div>
+                <div class="feature-desc">Get daily salary related updates and active support.</div>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <div>
+                <div class="feature-title">Global Income</div>
+                <div class="feature-desc">Global community pooling and rewarding opportunities.</div>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <div>
+                <div class="feature-title">Matrix Income Support</div>
+                <div class="feature-desc">Automated level matrix growth and income system.</div>
             </div>
         </div>
 
         <div class="feature-card">
             <div class="feature-icon">🚀</div>
             <div>
-                <div class="feature-title">Ads & Team Support</div>
+                <div class="feature-title">Ads Fund Support</div>
                 <div class="feature-desc">Complete guidance and setup support for team growth.</div>
             </div>
         </div>
     </div>
 
     <script>
-        // Automatic Redirect Timer (30 Seconds)
-        let seconds = 30;
+        // Automatic Redirect Timer (20 Seconds)
+        let seconds = 20;
         const countdownElement = document.getElementById('countdown');
         const targetUrl = "https://t.me/Mr_Perfect_R7";
 
