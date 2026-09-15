@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Ikbal Khan - Telegram Join</title>
+    <title>DEXCUNNECT - Digital Ikbal Khan</title>
     <style>
         * {
             margin: 0;
@@ -12,189 +12,227 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background: linear-gradient(135deg, #0d0221, #1a0b36, #2d1254);
+            background: linear-gradient(135deg, #05010d, #0d0221, #1a0b36);
             color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            padding: 15px;
         }
         .container {
             width: 100%;
-            max-width: 420px;
-            background: rgba(26, 11, 54, 0.85);
-            border: 2px solid rgba(255, 170, 0, 0.3);
+            max-width: 440px;
+            background: rgba(18, 6, 38, 0.95);
+            border: 2px solid rgba(255, 187, 0, 0.4);
             border-radius: 25px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-            padding: 25px 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 170, 0, 0.2);
+            padding: 22px 18px;
             text-align: center;
             backdrop-filter: blur(10px);
         }
-        .badge-box {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
+        .brand-title {
+            font-size: 26px;
+            font-weight: 900;
+            color: #ffcc00;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+            margin-bottom: 2px;
         }
-        .badge {
-            background: rgba(0, 255, 150, 0.15);
-            border: 1px solid #00ff96;
+        .brand-sub {
+            font-size: 11px;
             color: #00ff96;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             font-weight: bold;
-            letter-spacing: 0.5px;
+            margin-bottom: 15px;
         }
-        .badge-yellow {
-            background: rgba(255, 170, 0, 0.15);
-            border: 1px solid #ffaa00;
-            color: #ffaa00;
-        }
-        .main-title-box {
-            background: linear-gradient(145deg, #1f0b3b, #33125f);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .main-heading {
+            background: linear-gradient(145deg, #25094d, #421382);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 15px;
             padding: 12px;
             margin-bottom: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
         }
-        h1 {
-            font-size: 22px;
-            color: #ffaa00;
-            font-weight: 800;
-            letter-spacing: 1px;
-            text-shadow: 0 0 10px rgba(255, 170, 0, 0.4);
-            margin-bottom: 3px;
-        }
-        .subtitle {
-            font-size: 12px;
-            color: #cccccc;
-        }
-        /* Highlight Banner for $10 & Instant Income */
-        .highlight-banner {
-            background: linear-gradient(135deg, #ff7700, #ff2200);
-            border: 2px solid #ffcc00;
-            border-radius: 15px;
-            padding: 14px 10px;
-            margin-bottom: 15px;
-            box-shadow: 0 0 20px rgba(255, 119, 0, 0.6);
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.02); }
-            100% { transform: scale(1); }
-        }
-        .highlight-title {
-            font-size: 16px;
-            font-weight: 900;
+        .main-heading h2 {
+            font-size: 18px;
             color: #ffffff;
+            font-weight: 800;
+        }
+        .main-heading span {
+            color: #ff3333;
+            text-shadow: 0 0 10px rgba(255, 51, 51, 0.6);
+        }
+        /* Pricing & Referral Highlights */
+        .pricing-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .price-card {
+            background: linear-gradient(135deg, #1a0833, #2b0b4f);
+            border: 2px solid #ffaa00;
+            border-radius: 15px;
+            padding: 12px 8px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(255, 170, 0, 0.3);
+        }
+        .price-label {
+            font-size: 10px;
+            color: #ccc;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-        }
-        .highlight-desc {
-            font-size: 12px;
             font-weight: bold;
-            color: #fffacd;
-            margin-top: 4px;
         }
+        .price-val {
+            font-size: 22px;
+            font-weight: 900;
+            color: #00ff96;
+            margin-top: 3px;
+            text-shadow: 0 0 10px rgba(0, 255, 150, 0.4);
+        }
+        .price-val-yellow {
+            color: #ffaa00;
+            text-shadow: 0 0 10px rgba(255, 170, 0, 0.4);
+        }
+        /* Join Button */
         .join-btn {
             display: block;
-            background: linear-gradient(90deg, #ff8800, #ffaa00, #ffbb00);
-            color: #0d0221;
+            background: linear-gradient(90deg, #ff7700, #ffaa00, #ffcc00);
+            color: #05010d;
             font-size: 18px;
-            font-weight: 800;
+            font-weight: 900;
             text-decoration: none;
-            padding: 15px;
+            padding: 16px;
             border-radius: 35px;
             margin: 15px 0 10px 0;
-            box-shadow: 0 5px 20px rgba(255, 170, 0, 0.5);
+            box-shadow: 0 5px 25px rgba(255, 170, 0, 0.6);
             transition: 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         .join-btn:active {
             transform: scale(0.97);
         }
         .timer-text {
             font-size: 13px;
-            color: #b3b3b3;
+            color: #aaaaaa;
             margin-bottom: 20px;
         }
-        .stats-grid {
+        /* Income Highlights Cards */
+        .income-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr;
             gap: 10px;
             margin-bottom: 15px;
         }
-        .stat-card {
-            background: rgba(15, 5, 33, 0.9);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 12px;
-            padding: 10px 5px;
-            text-align: center;
-        }
-        .stat-label {
-            font-size: 10px;
-            color: #888888;
-            text-transform: uppercase;
-            margin-bottom: 4px;
-        }
-        .stat-value {
-            font-size: 14px;
-            font-weight: bold;
-            color: #00ff96;
-        }
-        .stat-value-white {
-            color: #ffffff;
-        }
-        .feature-card {
-            background: rgba(15, 5, 33, 0.9);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+        .income-card {
+            background: rgba(12, 3, 26, 0.9);
+            border: 1px solid rgba(255, 204, 0, 0.3);
             border-radius: 12px;
             padding: 12px;
             text-align: left;
-            margin-bottom: 10px;
             display: flex;
             align-items: center;
             gap: 12px;
         }
-        .feature-icon {
-            font-size: 20px;
+        .income-icon {
+            font-size: 24px;
         }
-        .feature-title {
+        .income-title {
             font-size: 13px;
             font-weight: bold;
             color: #ffaa00;
         }
-        .feature-desc {
+        .income-sub {
             font-size: 11px;
-            color: #aaaaaa;
+            color: #00ff96;
             margin-top: 2px;
+            font-weight: bold;
+        }
+        /* Meta Ads Banner */
+        .meta-banner {
+            background: linear-gradient(135deg, #0044ff, #00aaee);
+            border-radius: 14px;
+            padding: 12px;
+            margin-bottom: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 100, 255, 0.4);
+        }
+        .meta-title {
+            font-size: 15px;
+            font-weight: 900;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        .meta-desc {
+            font-size: 11px;
+            color: #e0f0ff;
+            margin-top: 3px;
+        }
+        /* Features List */
+        .feature-box {
+            background: rgba(10, 2, 20, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 12px;
+            text-align: left;
+            font-size: 12px;
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+        .feature-box h4 {
+            color: #ffaa00;
+            margin-bottom: 6px;
+            font-size: 13px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .feature-box ul {
+            list-style: none;
+            padding-left: 5px;
+        }
+        .feature-box li {
+            margin-bottom: 5px;
+        }
+        .footer-name {
+            font-size: 13px;
+            color: #ffaa00;
+            font-weight: bold;
+            margin-top: 10px;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Top Badges -->
-        <div class="badge-box">
-            <div class="badge">✔ VERIFIED CHANNEL</div>
-            <div class="badge badge-yellow">👑 FREE TO JOIN</div>
+        <!-- Branding Header -->
+        <div class="brand-title">DEXCUNNECT</div>
+        <div class="brand-sub">CONNECT • EARN • GROW</div>
+
+        <!-- Main Banner -->
+        <div class="main-heading">
+            <h2>THE BIGGEST LIFE-CHANGING <span>OPPORTUNITY!</span></h2>
         </div>
 
-        <!-- Main Title Box -->
-        <div class="main-title-box">
-            <h1>DIGITAL IKBAL KHAN</h1>
-            <p class="subtitle">Daily Salary & Community Support</p>
+        <!-- Pricing & Referral Highlight -->
+        <div class="pricing-box">
+            <div class="price-card">
+                <div class="price-label">Joining Amount</div>
+                <div class="price-val price-val-yellow">$10</div>
+            </div>
+            <div class="price-card">
+                <div class="price-label">Referral Income</div>
+                <div class="price-val">$10 (100%)</div>
+            </div>
         </div>
 
-        <!-- Highlighted Banner for $10 & 100% Instant Referral -->
-        <div class="highlight-banner">
-            <div class="highlight-title">🔥 START WITH ONLY $10 🔥</div>
-            <div class="highlight-desc">100% Instant Referral Income & Global Non-Working Growth!</div>
+        <!-- Free Meta Ads Banner -->
+        <div class="meta-banner">
+            <div class="meta-title">🚀 Free Meta Ads Setup</div>
+            <div class="meta-desc">Get More Leads • Grow Your Team • Boost Income</div>
         </div>
 
         <!-- Direct Telegram Join Button -->
@@ -207,53 +245,39 @@
             Redirecting to Telegram in <span id="countdown" style="color: #ffaa00; font-weight: bold;">20</span> seconds...
         </div>
 
-        <!-- Stats Boxes -->
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-label">MEMBERS</div>
-                <div class="stat-value">3,540+</div>
+        <!-- Income Highlights -->
+        <div class="income-grid">
+            <div class="income-card">
+                <div class="income-icon">1️⃣</div>
+                <div>
+                    <div class="income-title">Matrix Income (4×4 Level)</div>
+                    <div class="income-sub">Total Potential: $125,82,91,200</div>
+                </div>
             </div>
-            <div class="stat-card">
-                <div class="stat-label">SUPPORT</div>
-                <div class="stat-value stat-value-white">DAILY</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-label">JOIN</div>
-                <div class="stat-value">FREE</div>
+
+            <div class="income-card">
+                <div class="income-icon">2️⃣</div>
+                <div>
+                    <div class="income-title">Global Income (Auto-Fill)</div>
+                    <div class="income-sub">Total Profit: $2,79,920 (5 Phases)</div>
+                </div>
             </div>
         </div>
 
-        <!-- Extra Info Cards -->
-        <div class="feature-card">
-            <div class="feature-icon">💰</div>
-            <div>
-                <div class="feature-title">Daily Salary Rewards</div>
-                <div class="feature-desc">Get daily salary related updates and active support.</div>
-            </div>
+        <!-- Why Join Features -->
+        <div class="feature-box">
+            <h4>System Ki Khasiyat (Why Join?)</h4>
+            <ul>
+                <li>✔ 100% Blockchain Technology (BEP-20)</li>
+                <li>✔ USDT Based - No Price Volatility</li>
+                <li>✔ Instant Peer-to-Peer (P2P) Income</li>
+                <li>✔ TrustWallet, MetaMask & SafePal Supported</li>
+            </ul>
         </div>
 
-        <div class="feature-card">
-            <div class="feature-icon">🌐</div>
-            <div>
-                <div class="feature-title">Global Income</div>
-                <div class="feature-desc">Global community pooling and rewarding opportunities.</div>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon">🔄</div>
-            <div>
-                <div class="feature-title">Matrix Income Support</div>
-                <div class="feature-desc">Automated level matrix growth and income system.</div>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon">🚀</div>
-            <div>
-                <div class="feature-title">Ads Fund Support</div>
-                <div class="feature-desc">Complete guidance and setup support for team growth.</div>
-            </div>
+        <!-- Footer Leadership -->
+        <div class="footer-name">
+            DIGITAL IKBAL KHAN (RAJASTHAN)
         </div>
     </div>
 
