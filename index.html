@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIGITAL IKBAL KHAN - DEXCUNNECT OPPORTUNITY</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Digital Ikbal Khan - Telegram Join</title>
     <style>
         * {
             margin: 0;
@@ -13,452 +12,217 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background: linear-gradient(135deg, #030712 0%, #0f172a 50%, #020617 100%);
+            background: linear-gradient(135deg, #0d0221, #1a0b36, #2d1254);
             color: #ffffff;
-            line-height: 1.6;
-            padding: 10px;
-            padding-bottom: 75px; /* For sticky bottom bar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
         }
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: rgba(15, 23, 42, 0.96);
-            border: 2px solid #f39c12;
-            border-radius: 18px;
-            box-shadow: 0 0 40px rgba(243, 156, 18, 0.35);
-            overflow: hidden;
-            padding: 15px;
-        }
-        header {
+            width: 100%;
+            max-width: 420px;
+            background: rgba(26, 11, 54, 0.85);
+            border: 2px solid rgba(255, 170, 0, 0.3);
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            padding: 25px 20px;
             text-align: center;
-            padding: 15px 0;
-            border-bottom: 2px dashed #f39c12;
-            background: radial-gradient(circle, rgba(243,156,18,0.12) 0%, transparent 70%);
+            backdrop-filter: blur(10px);
         }
-        header h1 {
-            color: #f39c12;
-            font-size: 28px;
-            font-weight: 900;
-            letter-spacing: 1.5px;
-            text-shadow: 0 0 12px rgba(243, 156, 18, 0.6);
-            text-transform: uppercase;
-        }
-        header h2 {
-            font-size: 14px;
-            color: #00e676;
-            margin-top: 5px;
-            font-weight: 600;
-        }
-        .presenter-tag {
-            background: linear-gradient(90deg, #1e293b, #334155);
-            border: 1px solid #475569;
-            padding: 8px;
-            border-radius: 8px;
-            text-align: center;
-            margin-top: 10px;
-            font-size: 14px;
-            color: #f8fafc;
-        }
-        .presenter-tag strong {
-            color: #38bdf8;
-        }
-
-        /* Top Join Button */
-        .top-join-box {
-            margin: 15px 0;
-            text-align: center;
-        }
-
-        /* URGENT HIGHLIGHT CARDS FOR $10 & $20 PACKAGES */
-        .highlight-packages {
+        .badge-box {
             display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin: 20px 0;
-        }
-        .pkg-card {
-            border-radius: 14px;
-            padding: 16px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        /* $10 Card Design */
-        .pkg-matrix {
-            background: linear-gradient(135deg, #2e1065, #1e1b4b);
-            border: 2px solid #a855f7;
-            box-shadow: 0 0 25px rgba(168, 85, 247, 0.3);
-        }
-        .pkg-matrix .pkg-badge {
-            background: #a855f7;
-        }
-        /* $20 Global Card Design */
-        .pkg-global {
-            background: linear-gradient(135deg, #064e3b, #022c22);
-            border: 2px solid #10b981;
-            box-shadow: 0 0 25px rgba(16, 185, 129, 0.3);
-        }
-        .pkg-global .pkg-badge {
-            background: #10b981;
-        }
-        .pkg-badge {
-            display: inline-block;
-            color: #000;
-            font-weight: 900;
-            font-size: 12px;
-            padding: 3px 10px;
-            border-radius: 20px;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-        }
-        .pkg-card h3 {
-            font-size: 18px;
-            color: #fff;
-            font-weight: 800;
-            margin-bottom: 5px;
-        }
-        .pkg-card .price-tag {
-            font-size: 26px;
-            font-weight: 900;
-            color: #f39c12;
-            text-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
-            margin: 5px 0;
-        }
-        .pkg-card p {
-            font-size: 13px;
-            color: #e2e8f0;
-        }
-
-        /* Timer Box */
-        .timer-box {
-            background: linear-gradient(135deg, #4c0519, #831843);
-            border: 2px solid #f43f5e;
-            padding: 15px;
-            border-radius: 12px;
-            text-align: center;
-            margin: 15px 0;
-            box-shadow: 0 0 20px rgba(244, 63, 94, 0.4);
-        }
-        .timer-box h3 {
-            font-size: 14px;
-            color: #ffe4e6;
-            font-weight: bold;
-        }
-        #countdown {
-            font-size: 32px;
-            font-weight: 900;
-            color: #fff;
-            margin: 5px 0;
-            letter-spacing: 3px;
-            text-shadow: 0 0 12px #f43f5e;
-        }
-
-        /* Universal WhatsApp Button */
-        .btn-whatsapp {
-            display: inline-flex;
-            align-items: center;
             justify-content: center;
             gap: 10px;
-            background: linear-gradient(135deg, #22c55e, #16a34a);
-            color: #fff;
-            width: 100%;
-            padding: 14px 20px;
-            border-radius: 35px;
-            font-size: 16px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: rgba(0, 255, 150, 0.15);
+            border: 1px solid #00ff96;
+            color: #00ff96;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
             font-weight: bold;
-            text-decoration: none;
-            box-shadow: 0 4px 20px rgba(34, 197, 94, 0.5);
-            transition: 0.3s;
-            animation: pulse-glow 1.5s infinite;
-            border: 1px solid #4ade80;
-            text-transform: uppercase;
-        }
-        .btn-whatsapp:hover {
-            transform: scale(1.02);
-            background: linear-gradient(135deg, #16a34a, #15803d);
-        }
-        @keyframes pulse-glow {
-            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
-            70% { box-shadow: 0 0 0 12px rgba(34, 197, 94, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
-        }
-
-        .section-title {
-            background: linear-gradient(90deg, #f39c12, #d97706);
-            color: #000;
-            padding: 10px 12px;
-            border-radius: 6px;
-            font-weight: 900;
-            font-size: 14px;
-            margin: 25px 0 10px 0;
-            text-align: center;
-            text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-        .table-container {
-            overflow-x: auto;
-            margin: 10px 0;
-            border-radius: 8px;
-            border: 1px solid #334155;
+        .badge-yellow {
+            background: rgba(255, 170, 0, 0.15);
+            border: 1px solid #ffaa00;
+            color: #ffaa00;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 12px;
-            text-align: center;
-        }
-        th, td {
-            padding: 9px 6px;
-            border: 1px solid #1e293b;
-        }
-        th {
-            background-color: #1e293b;
-            color: #f39c12;
-            font-weight: bold;
-        }
-        td {
-            background-color: #0b0f19;
-            color: #e2e8f0;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #1e3a8a, #1e1b4b);
-            border: 1px solid #3b82f6;
+        .main-title-box {
+            background: linear-gradient(145deg, #1f0b3b, #33125f);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
             padding: 15px;
-            border-radius: 10px;
-            margin: 15px 0;
-            text-align: center;
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
-        .highlight-box h3 {
-            color: #93c5fd;
-            font-size: 16px;
+        h1 {
+            font-size: 24px;
+            color: #ffaa00;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(255, 170, 0, 0.4);
             margin-bottom: 5px;
         }
-        .features-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin: 15px 0;
-        }
-        .feature-item {
-            background: #111827;
-            border: 1px solid #374151;
-            padding: 12px;
-            border-radius: 8px;
-            font-size: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 600;
-        }
-        .feature-item i {
-            color: #22c55e;
-            font-size: 18px;
-        }
-
-        /* Bottom Contact Card */
-        .contact-card {
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            border: 2px solid #22c55e;
-            border-radius: 14px;
-            padding: 20px;
-            text-align: center;
-            margin-top: 25px;
-            box-shadow: 0 0 25px rgba(34, 197, 94, 0.3);
-        }
-        .contact-card h2 {
-            color: #f39c12;
-            font-size: 22px;
-            margin-bottom: 5px;
-            font-weight: 900;
-        }
-        .contact-card p {
+        .subtitle {
             font-size: 13px;
-            color: #cbd5e1;
-            margin-bottom: 15px;
+            color: #cccccc;
+            margin-top: 5px;
         }
-
-        /* Sticky Footer Bar */
-        .sticky-footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(3, 7, 18, 0.95);
-            border-top: 2px solid #22c55e;
-            padding: 10px 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            box-shadow: 0 -5px 20px rgba(0,0,0,0.8);
+        .join-btn {
+            display: block;
+            background: linear-gradient(90deg, #ff8800, #ffaa00, #ffbb00);
+            color: #0d0221;
+            font-size: 18px;
+            font-weight: 800;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 35px;
+            margin: 20px 0 12px 0;
+            box-shadow: 0 5px 20px rgba(255, 170, 0, 0.5);
+            transition: 0.3s ease;
         }
-        .sticky-footer a {
-            width: 100%;
-            max-width: 500px;
-            padding: 12px;
-            font-size: 15px;
+        .join-btn:active {
+            transform: scale(0.97);
         }
-
-        .footer {
+        .timer-text {
+            font-size: 13px;
+            color: #b3b3b3;
+            margin-bottom: 25px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .stat-card {
+            background: rgba(15, 5, 33, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 12px 5px;
             text-align: center;
+        }
+        .stat-label {
+            font-size: 10px;
+            color: #888888;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .stat-value {
+            font-size: 14px;
+            font-weight: bold;
+            color: #00ff96;
+        }
+        .stat-value-white {
+            color: #ffffff;
+        }
+        .feature-card {
+            background: rgba(15, 5, 33, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 14px;
+            text-align: left;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .feature-icon {
+            font-size: 22px;
+        }
+        .feature-title {
+            font-size: 14px;
+            font-weight: bold;
+                color: #ffaa00;
+        }
+        .feature-desc {
             font-size: 11px;
-            color: #64748b;
-            margin-top: 20px;
-            padding-top: 10px;
-            border-top: 1px solid #1e293b;
+            color: #aaaaaa;
+            margin-top: 2px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <header>
-            <h1>⚡ DEXCUNNECT ⚡</h1>
-            <h2>THE BIGGEST LIFE-CHANGING OPPORTUNITY!</h2>
-            <div class="presenter-tag">
-                Presented By: <strong>DIGITAL IKBAL KHAN</strong> (Rajasthan)
-            </div>
-        </header>
-
-        <!-- TOP JOIN NOW BUTTON -->
-        <div class="top-join-box">
-            <a href="https://wa.me/919549768696?text=Hello%20Ikbal%20Khan,%20I%20want%20to%20join%20Dexcunnect%20Right%20Now!" class="btn-whatsapp" target="_blank">
-                <i class="fa-brands fa-whatsapp fa-lg"></i> 🚀 Join Now On WhatsApp
-            </a>
+        <!-- Top Badges -->
+        <div class="badge-box">
+            <div class="badge">✔ VERIFIED CHANNEL</div>
+            <div class="badge badge-yellow">👑 FREE TO JOIN</div>
         </div>
 
-        <!-- 30 Seconds Urgency Timer with Embedded Join Button -->
-        <div class="timer-box">
-            <h3>⏳ Top Position Book Karne Ka Samay Sesh ⏳</h3>
-            <div id="countdown">00:30</div>
-            <p style="font-size: 11px; color: #ffe4e6; margin-bottom: 12px;">Miss mat kijiye! Abhi apni position lock karein.</p>
-            <a href="https://wa.me/919549768696?text=Hello%20Ikbal%20Khan,%20Timer%20ke%20tahat%20mujhhe%20Dexcunnect%20me%20top%20position%20book%20karni%20hai!" class="btn-whatsapp" style="background: linear-gradient(135deg, #ffffff, #e2e8f0); color: #0f172a; border: none; font-size: 14px; padding: 10px;">
-                <i class="fa-brands fa-whatsapp" style="color: #22c55e;"></i> 🔥 Claim Your Position Now
-            </a>
+        <!-- Main Title Box -->
+        <div class="main-title-box">
+            <h1>DIGITAL IKBAL KHAN</h1>
+            <p class="subtitle">Daily Salary & Community Support</p>
         </div>
 
-        <!-- ULTRA-HIGHLIGHTED PACKAGES SECTION ($10 & $20) -->
-        <div class="highlight-packages">
-            <!-- $10 Joining & Direct Referral Highlight -->
-            <div class="pkg-card pkg-matrix">
-                <span class="pkg-badge">Matrix Level Income</span>
-                <h3>🚀 Joining & Direct Referral</h3>
-                <div class="price-tag">$10 Only</div>
-                <p>👉 <strong>100% Direct Referral Income!</strong> Yani har direct joining par poore $10 turant aapke!</p>
-            </div>
-
-            <!-- $20 Global Auto-Fill Highlight -->
-            <div class="pkg-card pkg-global">
-                <span class="pkg-badge">Auto-Fill System</span>
-                <h3>🌍 Global Income Opportunity</h3>
-                <div class="price-tag">$20 Entry</div>
-                <p>👉 <strong>Bina kisi extra work ke</strong> 5 Phases me total profit kamao upar tak: <strong style="color: #facc15;">$2,79,920!</strong></p>
-            </div>
-        </div>
-
-        <!-- Matrix Income Section -->
-        <div class="section-title">1. Matrix Level Income (4×4 Matrix)</div>
-        <p style="font-size: 11px; text-align: center; color: #94a3b8; margin-bottom: 10px;">Matrix Entry: Only $10/- | Level 2 ke baad direct referral ki zaroorat nahi!</p>
-        
-        <div class="table-container">
-            <table>
-                <tr>
-                    <th>Level</th>
-                    <th>Total Income</th>
-                    <th>Upgrade</th>
-                    <th>Net Profit</th>
-                </tr>
-                <tr><td>1</td><td>$40</td><td>$20</td><td>$20</td></tr>
-                <tr><td>2</td><td>$320</td><td>$40</td><td>$280</td></tr>
-                <tr><td>3</td><td>$2,560</td><td>$100</td><td>$2,460</td></tr>
-                <tr><td>4</td><td>$25,600</td><td>$200</td><td>$25,400</td></tr>
-                <tr><td>5</td><td>$2,04,800</td><td>$400</td><td>$2,04,400</td></tr>
-                <tr><td>6</td><td>$16,38,400</td><td>$600</td><td>$16,37,800</td></tr>
-                <tr><td>7</td><td>$98,30,400</td><td>$800</td><td>$98,29,600</td></tr>
-                <tr><td>8</td><td>$5,24,28,800</td><td>$1000</td><td>$5,24,27,800</td></tr>
-                <tr><td>9</td><td>$26,21,44,000</td><td>$1200</td><td>$26,21,42,800</td></tr>
-                <tr><td>10</td><td>$125,82,91,200</td><td>—</td><td>$125,82,91,200</td></tr>
-            </table>
-        </div>
-
-        <div class="highlight-box">
-            <h3>Total Matrix Earning Potential</h3>
-            <p style="font-size: 18px; font-weight: bold; color: #4ade80;">$125,82,91,200</p>
-            <small style="color: #94a3b8;">(Level 10 tak lagatar badhti income!)</small>
-        </div>
-
-        <!-- Global Income Section -->
-        <div class="section-title">2. Global Income :- (Auto-Fill System)</div>
-        <p style="font-size: 11px; text-align: center; color: #94a3b8; margin-bottom: 10px;">Global Entry: Only $20/- | 5 Phases Life Changing Income!</p>
-
-        <div class="table-container">
-            <table>
-                <tr>
-                    <th>Phase</th>
-                    <th>Total Income</th>
-                    <th>Upgrade</th>
-                    <th>Profit</th>
-                </tr>
-                <tr><td>1st Phase</td><td>$200</td><td>-$120</td><td>$80</td></tr>
-                <tr><td>2nd Phase</td><td>$1200</td><td>-$720</td><td>$480</td></tr>
-                <tr><td>3rd Phase</td><td>$7200</td><td>-$4320</td><td>$2,880</td></tr>
-                <tr><td>4th Phase</td><td>$43,200</td><td>-$25,920</td><td>$17,280</td></tr>
-                <tr><td>5th Phase</td><td>$2,59,200</td><td>No Upgrade</td><td>$2,59,200</td></tr>
-            </table>
-        </div>
-
-        <div class="highlight-box" style="background: linear-gradient(135deg, #065f46, #022c22); border-color: #10b981;">
-            <h3>Total Global Profit</h3>
-            <p style="font-size: 20px; font-weight: bold; color: #facc15;">$2,79,920</p>
-            <small style="color: #e2e8f0;">(Bina kisi extra work ke! Auto-fill system)</small>
-        </div>
-
-        <!-- System Khasiyat -->
-        <div class="section-title">System Ki Khasiyat (Why Join Us?)</div>
-        <div class="features-grid">
-            <div class="feature-item"><i class="fa-solid fa-cube"></i> 100% Blockchain</div>
-            <div class="feature-item"><i class="fa-solid fa-shield-halved"></i> USDT Based (Safe)</div>
-            <div class="feature-item"><i class="fa-solid fa-bolt"></i> Instant P2P Income</div>
-            <div class="feature-item"><i class="fa-solid fa-wallet"></i> Trust Wallet Support</div>
-        </div>
-
-        <!-- BOTTOM CONTACT CARD WITH JOIN NOW BUTTON -->
-        <div class="contact-card">
-            <h2>DIGITAL IKBAL KHAN</h2>
-            <p><i class="fa-solid fa-location-dot" style="color: #f39c12;"></i> From: Rajasthan</p>
-            <p><strong>Joining aur Full Support ke liye abhi message karein!</strong></p>
-            <a href="https://wa.me/919549768696?text=Hello%20Ikbal%20Khan,%20I%20want%20to%20join%20Dexcunnect%20with%20your%20full%20support!" class="btn-whatsapp" target="_blank">
-                <i class="fa-brands fa-whatsapp fa-lg"></i> 🎯 Join Now With Ikbal Khan
-            </a>
-        </div>
-
-        <div class="footer">
-            <p>SECURE | TRANSPARENT | GLOBAL | BLOCKCHAIN POWERED</p>
-            <p>&copy; 2026 DIGITAL IKBAL KHAN. All Rights Reserved.</p>
-        </div>
-    </div>
-
-    <!-- STICKY BOTTOM FIXED WHATSAPP BAR -->
-    <div class="sticky-footer">
-        <a href="https://wa.me/919549768696?text=Hello%20Ikbal%20Khan,%20Seen%20your%20landing%20page,%20want%20to%20join%20now!" class="btn-whatsapp" target="_blank" style="padding: 10px; font-size: 14px;">
-            <i class="fa-brands fa-whatsapp fa-lg"></i> Chat On WhatsApp: 9549768696
+        <!-- Direct Telegram Join Button -->
+        <a href="https://t.me/Mr_Perfect_R7" class="join-btn" id="telegramLink">
+            JOIN TELEGRAM FREE
         </a>
+
+        <!-- Timer Text (30 Seconds) -->
+        <div class="timer-text">
+            Redirecting to Telegram in <span id="countdown" style="color: #ffaa00; font-weight: bold;">30</span> seconds...
+        </div>
+
+        <!-- Stats Boxes -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">MEMBERS</div>
+                <div class="stat-value">3,540+</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">SUPPORT</div>
+                <div class="stat-value stat-value-white">DAILY</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">JOIN</div>
+                <div class="stat-value">FREE</div>
+            </div>
+        </div>
+
+        <!-- Extra Info Cards -->
+        <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <div>
+                <div class="feature-title">Daily Growth & Updates</div>
+                <div class="feature-desc">Get daily salary related updates and support directly.</div>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <div>
+                <div class="feature-title">Ads & Team Support</div>
+                <div class="feature-desc">Complete guidance and setup support for team growth.</div>
+            </div>
+        </div>
     </div>
 
-    <!-- Timer Script -->
     <script>
-        let timeLeft = 30;
-        const countdownEl = document.getElementById('countdown');
-        
-        setInterval(() => {
-            if(timeLeft <= 0) {
-                timeLeft = 30;
+        // Automatic Redirect Timer (30 Seconds)
+        let seconds = 30;
+        const countdownElement = document.getElementById('countdown');
+        const targetUrl = "https://t.me/Mr_Perfect_R7";
+
+        const timerInterval = setInterval(function() {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(timerInterval);
+                window.location.href = targetUrl;
             }
-            let seconds = timeLeft < 10 ? '0' + timeLeft : timeLeft;
-            countdownEl.innerHTML = `00:${seconds}`;
-            timeLeft--;
         }, 1000);
     </script>
+
 </body>
 </html>
