@@ -1,462 +1,83 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEXCUNNECT - Digital Ikbal Khan Opportunity</title>
+    <title>DEXCUNNECT - Digital Community & Mentorship</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
         body {
-            background: linear-gradient(135deg, #05010d, #0d0221, #1a0b36);
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
             color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 10px;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
         }
         .container {
-            width: 100%;
-            max-width: 480px;
-            background: rgba(18, 6, 38, 0.98);
-            border: 2px solid rgba(255, 187, 0, 0.5);
-            border-radius: 25px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 170, 0, 0.25);
-            padding: 20px 15px;
-            text-align: center;
-            backdrop-filter: blur(10px);
+            max-width: 600px;
+            margin: 50px auto;
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
-        .brand-title {
-            font-size: 28px;
-            font-weight: 900;
-            color: #ffcc00;
-            letter-spacing: 2px;
-            text-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
-        }
-        .brand-sub {
-            font-size: 11px;
-            color: #00ff96;
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin-bottom: 12px;
-        }
-        .main-heading {
-            background: linear-gradient(145deg, #25094d, #421382);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
+        h1 { color: #38bdf8; font-size: 24px; }
+        p { color: #94a3b8; font-size: 16px; line-height: 1.5; }
+        .highlight {
+            background: #0284c7;
+            color: white;
             padding: 12px;
-            margin-bottom: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 20px 0;
         }
-        .main-heading h2 {
-            font-size: 17px;
-            color: #ffffff;
-            font-weight: 800;
-        }
-        .main-heading span {
-            color: #ff3333;
-            text-shadow: 0 0 10px rgba(255, 51, 51, 0.6);
-        }
-        /* Pricing & Referral Highlights */
-        .pricing-box {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-        .price-card {
-            background: linear-gradient(135deg, #1a0833, #2b0b4f);
-            border: 2px solid #ffaa00;
-            border-radius: 15px;
-            padding: 12px 8px;
-            text-align: center;
-            box-shadow: 0 0 15px rgba(255, 170, 0, 0.3);
-        }
-        .price-label {
-            font-size: 10px;
-            color: #ccc;
-            text-transform: uppercase;
+        .timer-box {
+            font-size: 20px;
+            color: #facc15;
+            margin: 20px 0;
             font-weight: bold;
         }
-        .price-val {
-            font-size: 24px;
-            font-weight: 900;
-            color: #00ff96;
-            margin-top: 3px;
-            text-shadow: 0 0 10px rgba(0, 255, 150, 0.5);
-        }
-        .price-val-yellow {
-            color: #ffaa00;
-            text-shadow: 0 0 10px rgba(255, 170, 0, 0.5);
-        }
-        .badge-row {
-            display: flex;
-            justify-content: center;
-            gap: 6px;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-        }
-        .badge {
-            background: rgba(0, 255, 150, 0.15);
-            border: 1px solid #00ff96;
-            color: #00ff96;
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 10px;
-            font-weight: bold;
-        }
-        /* MEGA META ADS HIGHLIGHT BANNER */
-        .meta-ads-banner {
-            background: linear-gradient(135deg, #0051ff, #0099ff);
-            border: 3px solid #ffff00;
-            border-radius: 18px;
-            padding: 16px 12px;
-            margin-bottom: 15px;
-            box-shadow: 0 0 25px rgba(0, 120, 255, 0.7);
-            animation: glow 2s infinite alternate;
-        }
-        @keyframes glow {
-            from { box-shadow: 0 0 15px rgba(0, 150, 255, 0.5); }
-            to { box-shadow: 0 0 30px rgba(255, 215, 0, 0.8); }
-        }
-        .meta-ads-title {
-            font-size: 18px;
-            font-weight: 900;
-            color: #ffffff;
-            text-transform: uppercase;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
-            margin-bottom: 5px;
-        }
-        .meta-ads-desc {
-            font-size: 12px;
-            color: #e6f2ff;
-            font-weight: bold;
-            line-height: 1.4;
-        }
-        /* Join Button */
-        .join-btn {
-            display: block;
-            background: linear-gradient(90deg, #ff7700, #ffaa00, #ffcc00);
-            color: #05010d;
-            font-size: 18px;
-            font-weight: 900;
+        .btn {
+            display: inline-block;
+            background: #22c55e;
+            color: white;
+            padding: 12px 25px;
             text-decoration: none;
-            padding: 16px;
-            border-radius: 35px;
-            margin: 15px 0 10px 0;
-            box-shadow: 0 5px 25px rgba(255, 170, 0, 0.6);
-            transition: 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .join-btn:active {
-            transform: scale(0.97);
-        }
-        .timer-text {
-            font-size: 13px;
-            color: #aaaaaa;
-            margin-bottom: 20px;
-        }
-        /* Section Box */
-        .section-box {
-            background: rgba(12, 3, 26, 0.95);
-            border: 2px solid rgba(255, 170, 0, 0.4);
-            border-radius: 15px;
-            padding: 14px;
-            margin-bottom: 15px;
-            text-align: left;
-        }
-        .section-title {
-            font-size: 16px;
-            font-weight: 900;
-            color: #ffaa00;
-            text-align: center;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-        }
-        .section-sub {
-            font-size: 12px;
-            color: #00ff96;
-            text-align: center;
-            margin-bottom: 10px;
+            border-radius: 6px;
             font-weight: bold;
-        }
-        .desc-text {
-            font-size: 11px;
-            color: #dddddd;
-            line-height: 1.5;
-            margin-bottom: 8px;
-        }
-        /* Table Styling */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 8px;
-            font-size: 11px;
-            text-align: center;
-        }
-        th, td {
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 6px 4px;
-        }
-        th {
-            background-color: #2b0b4f;
-            color: #ffaa00;
-            font-weight: bold;
-        }
-        td {
-            color: #ffffff;
-            background: rgba(20, 5, 40, 0.6);
-        }
-        .total-box {
-            background: linear-gradient(135deg, #b30000, #ff3300);
-            border: 2px solid #ffcc00;
-            border-radius: 12px;
-            padding: 10px;
-            text-align: center;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-        .total-box-green {
-            background: linear-gradient(135deg, #006622, #00aa44);
-        }
-        .total-title {
-            font-size: 11px;
-            color: #ffebb3;
-            text-transform: uppercase;
-        }
-        .total-val {
-            font-size: 18px;
-            color: #ffffff;
-            font-weight: 900;
-            margin-top: 2px;
-            text-shadow: 0 0 10px rgba(0,0,0,0.8);
-        }
-        /* Phase Grid for Global Income */
-        .phase-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 8px;
-            margin-top: 8px;
-        }
-        .phase-card {
-            background: rgba(25, 8, 50, 0.9);
-            border: 1px solid rgba(0, 255, 150, 0.4);
-            border-radius: 10px;
-            padding: 8px 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 11px;
-        }
-        .phase-name {
-            color: #ffaa00;
-            font-weight: bold;
-        }
-        .phase-earn {
-            color: #00ff96;
-            font-weight: bold;
-        }
-        /* Features list */
-        .feature-list {
-            list-style: none;
-            padding: 0;
-            font-size: 11px;
-            color: #dddddd;
-        }
-        .feature-list li {
-            margin-bottom: 6px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .footer-box {
-            background: rgba(10, 2, 20, 0.9);
-            border: 1px solid rgba(255, 204, 0, 0.3);
-            border-radius: 12px;
-            padding: 12px;
             margin-top: 15px;
-            text-align: center;
-        }
-        .footer-name {
-            font-size: 15px;
-            color: #ffaa00;
-            font-weight: 900;
-            letter-spacing: 1px;
-        }
-        .footer-contact {
-            font-size: 14px;
-            color: #00ff96;
-            font-weight: bold;
-            margin-top: 4px;
         }
     </style>
+    <script>
+        // 20 Seconds Redirect to Telegram
+        let timeLeft = 20;
+        window.onload = function() {
+            let timerInterval = setInterval(function() {
+                timeLeft--;
+                document.getElementById("countdown").innerText = timeLeft;
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    window.location.href = "https://t.me/YOUR_TELEGRAM_LINK"; // Yahan apna Telegram link daal dena
+                }
+            }, 1000);
+        };
+    </script>
 </head>
 <body>
-
     <div class="container">
-        <!-- Branding Header -->
-        <div class="brand-title">DEXCUNNECT</div>
-        <div class="brand-sub">CONNECT • EARN • GROW</div>
-
-        <!-- Main Banner -->
-        <div class="main-heading">
-            <h2>THE BIGGEST LIFE-CHANGING <span>OPPORTUNITY!</span></h2>
+        <h1>Welcome to DEXCUNNECT Community 🚀</h1>
+        <p>A premier global platform designed for digital entrepreneurs, network builders, and community leaders looking for structured growth and mentorship.</p>
+        
+        <div class="highlight">
+            🎁 Special Bonus: Free Meta Ads Setup & Guidance for Members!
         </div>
 
-        <!-- Pricing & Referral Highlight -->
-        <div class="pricing-box">
-            <div class="price-card">
-                <div class="price-label">Joining Amount</div>
-                <div class="price-val price-val-yellow">$10</div>
-            </div>
-            <div class="price-card">
-                <div class="price-label">Referral Income</div>
-                <div class="price-val">$10 (100%)</div>
-            </div>
+        <div class="timer-box">
+            Redirecting to official Telegram channel in <span id="countdown">20</span> seconds...
         </div>
 
-        <!-- Badges -->
-        <div class="badge-row">
-            <div class="badge">✔ 100% DECENTRALIZED</div>
-            <div class="badge">🌐 BEP-20 / USDT</div>
-            <div class="badge">⚡ P2P INSTANT</div>
-        </div>
-
-        <!-- MEGA FREE META ADS SETUP HIGHLIGHT -->
-        <div class="meta-ads-banner">
-            <div class="meta-ads-title">🚀 FREE META ADS SETUP FOR TEAM!</div>
-            <div class="meta-ads-desc">
-                Apni team ko fast grow karne ke liye milega <b>100% Free Meta Ads Setup, Landing Page, Pixel & Direct Guidance Support!</b> Ab bada growth karna hua aasaan!
-            </div>
-        </div>
-
-        <!-- Direct Telegram Join Button -->
-        <a href="https://t.me/Mr_Perfect_R7" class="join-btn" id="telegramLink">
-            JOIN TELEGRAM FREE
-        </a>
-
-        <!-- Timer Text (20 Seconds) -->
-        <div class="timer-text">
-            Redirecting to Telegram in <span id="countdown" style="color: #ffaa00; font-weight: bold;">20</span> seconds...
-        </div>
-
-        <!-- 1. MATRIX LEVEL INCOME SECTION -->
-        <div class="section-box">
-            <div class="section-title">1. Matrix Level Income</div>
-            <div class="section-sub">(4×4 Matrix Income - 1 to 10 Level)</div>
-            <div class="desc-text">
-                <b>Matrix Entry:</b> Only $10/-<br>
-                <b>Khasiyat:</b> Level 2 ke baad aage badhne ke liye kisi direct referral ki zaroorat nahi, bas pichla level buy hona chahiye!
-            </div>
-
-            <table>
-                <tr>
-                    <th>Level</th>
-                    <th>Total Income</th>
-                    <th>Upgrade</th>
-                    <th>Net Profit</th>
-                </tr>
-                <tr><td>1</td><td>$40</td><td>$20</td><td>$20</td></tr>
-                <tr><td>2</td><td>$320</td><td>$40</td><td>$280</td></tr>
-                <tr><td>3</td><td>$2,560</td><td>$100</td><td>$2,460</td></tr>
-                <tr><td>4</td><td>$25,600</td><td>$200</td><td>$25,400</td></tr>
-                <tr><td>5</td><td>$2,04,800</td><td>$400</td><td>$2,04,400</td></tr>
-                <tr><td>6</td><td>$16,38,400</td><td>$600</td><td>$16,37,800</td></tr>
-                <tr><td>7</td><td>$98,30,400</td><td>$800</td><td>$98,29,600</td></tr>
-                <tr><td>8</td><td>$5,24,28,800</td><td>$1000</td><td>$5,24,27,800</td></tr>
-                <tr><td>9</td><td>$26,21,44,000</td><td>$1200</td><td>$26,21,42,800</td></tr>
-                <tr><td>10</td><td>$125,82,91,200</td><td>—</td><td>$125,82,91,200</td></tr>
-            </table>
-
-            <div class="total-box">
-                <div class="total-title">Total Matrix Earning Potential</div>
-                <div class="total-val">$125,82,91,200</div>
-                <div style="font-size: 10px; color: #ffebb3; margin-top: 2px;">(Level 10 tak lagatar badhti income!)</div>
-            </div>
-        </div>
-
-        <!-- 2. GLOBAL INCOME SECTION -->
-        <div class="section-box">
-            <div class="section-title">2. Global Income (Auto-Fill)</div>
-            <div class="section-sub">5 Phases - Life Changing Income!</div>
-            <div class="desc-text">
-                <b>Global Entry:</b> Only $20/-<br>
-                <b>System:</b> Yeh ek Global Auto-fill system hai jahan Left & Right members globally system dwara set kiye jaate hain. Har level par 5-member structure kaam karta hai (3 members se Upgrade aur 2 members se Profit).
-            </div>
-
-            <div class="phase-grid">
-                <div class="phase-card">
-                    <span class="phase-name">1st Phase</span>
-                    <span class="phase-earn">$200 - $120 Up = <b>$80 Profit</b></span>
-                </div>
-                <div class="phase-card">
-                    <span class="phase-name">2nd Phase</span>
-                    <span class="phase-earn">$1,200 - $720 Up = <b>$480 Profit</b></span>
-                </div>
-                <div class="phase-card">
-                    <span class="phase-name">3rd Phase</span>
-                    <span class="phase-earn">$7,200 - $4,320 Up = <b>$2,880 Profit</b></span>
-                </div>
-                <div class="phase-card">
-                    <span class="phase-name">4th Phase</span>
-                    <span class="phase-earn">$43,200 - $25,920 Up = <b>$17,280 Profit</b></span>
-                </div>
-                <div class="phase-card">
-                    <span class="phase-name">5th Phase</span>
-                    <span class="phase-earn">$2,59,200 (No Up) = <b>$2,59,200 Profit</b></span>
-                </div>
-            </div>
-
-            <div class="total-box total-box-green">
-                <div class="total-title">Total Global Profit</div>
-                <div class="total-val">$2,79,920</div>
-                <div style="font-size: 10px; color: #e6ffec; margin-top: 2px;">(Bina kisi extra work ke!)</div>
-            </div>
-        </div>
-
-        <!-- WHY JOIN DEXCUNNECT -->
-        <div class="section-box">
-            <div class="section-title">Why Join Dexconnect?</div>
-            <ul class="feature-list">
-                <li>✔ <b>100% Blockchain Technology</b></li>
-                <li>✔ <b>No Price Volatility (USDT Based)</b></li>
-                <li>✔ <b>Instant Peer-to-Peer (P2P) Income</b></li>
-                <li>✔ <b>Supported Wallets:</b> Trust Wallet, SafePal, MetaMask, Token Pocket</li>
-                <li>✔ <b>Ranks from Bronze to Crown Ambassador!</b></li>
-            </ul>
-        </div>
-
-        <!-- FOOTER LEADERSHIP -->
-        <div class="footer-box">
-            <div style="font-size: 11px; color: #ccc; margin-bottom: 2px;">JOINING AUR FULL SUPPORT KE LIYE ABHI CONTACT KAREIN:</div>
-            <div class="footer-name">Ikbal Khan (Rajasthan)</div>
-            <div class="footer-contact">📞 / WhatsApp: 9549768696</div>
-        </div>
+        <p>If you are not redirected automatically, click the button below:</p>
+        <a href="https://t.me/YOUR_TELEGRAM_LINK" class="btn">Join Telegram Channel Now</a>
     </div>
-
-    <script>
-        // Automatic Redirect Timer (20 Seconds)
-        let seconds = 20;
-        const countdownElement = document.getElementById('countdown');
-        const targetUrl = "https://t.me/Mr_Perfect_R7";
-
-        const timerInterval = setInterval(function() {
-            seconds--;
-            countdownElement.textContent = seconds;
-            
-            if (seconds <= 0) {
-                clearInterval(timerInterval);
-                window.location.href = targetUrl;
-            }
-        }, 1000);
-    </script>
-
 </body>
 </html>
