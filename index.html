@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0f172a, #1e1b4b);
+            background: linear-gradient(135deg, #090d16, #1e1b4b);
             color: #ffffff;
             margin: 0;
             padding: 10px;
@@ -16,70 +16,94 @@
         .container {
             max-width: 650px;
             margin: 20px auto;
-            background: rgba(30, 41, 59, 0.95);
-            padding: 20px;
+            background: rgba(15, 23, 42, 0.98);
+            padding: 25px;
             border-radius: 16px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-            border: 1px solid rgba(56, 189, 248, 0.3);
+            box-shadow: 0 10px 35px rgba(0,0,0,0.7);
+            border: 2px solid #38bdf8;
         }
-        h1 { color: #38bdf8; font-size: 22px; margin-bottom: 5px; text-transform: uppercase; }
-        h2 { color: #facc15; font-size: 16px; margin-top: 5px; }
-        p { color: #cbd5e1; font-size: 14px; line-height: 1.5; }
+        h1 { 
+            color: #38bdf8; 
+            font-size: 26px; 
+            font-weight: 900; 
+            margin-bottom: 5px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+        }
+        h2 { 
+            color: #facc15; 
+            font-size: 18px; 
+            font-weight: 800; 
+            margin-top: 5px; 
+            text-transform: uppercase;
+        }
+        p { 
+            color: #e2e8f0; 
+            font-size: 15px; 
+            font-weight: 600; 
+            line-height: 1.5; 
+        }
         .timer-box {
             background: #0284c7;
             color: white;
-            padding: 12px;
+            padding: 14px;
             border-radius: 10px;
-            font-size: 16px;
-            font-weight: bold;
-            margin: 15px 0;
-            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
+            font-size: 17px;
+            font-weight: 800;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(2, 132, 199, 0.5);
+            text-transform: uppercase;
         }
         .highlight {
-            background: rgba(34, 197, 94, 0.15);
-            border: 1px solid #22c55e;
+            background: rgba(34, 197, 94, 0.2);
+            border: 2px solid #22c55e;
             color: #4ade80;
-            padding: 12px;
-            border-radius: 8px;
-            font-weight: bold;
-            margin: 15px 0;
-            font-size: 14px;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 900;
+            margin: 20px 0;
+            font-size: 16px;
+            text-transform: uppercase;
         }
         .features-box {
             background: #1e293b;
-            border: 1px solid #334155;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 15px 0;
+            border: 2px solid #334155;
+            padding: 18px;
+            border-radius: 12px;
+            margin: 20px 0;
             text-align: left;
         }
         .features-box h3 {
             color: #38bdf8;
-            font-size: 16px;
+            font-size: 17px;
+            font-weight: 900;
             margin-top: 0;
             text-align: center;
+            text-transform: uppercase;
         }
         .features-box ul {
             margin: 0;
             padding-left: 20px;
-            color: #e2e8f0;
-            font-size: 14px;
+            color: #f8fafc;
+            font-size: 15px;
+            font-weight: 700;
             line-height: 1.6;
         }
         .features-box li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
         .btn {
             display: inline-block;
             background: #22c55e;
             color: white;
-            padding: 12px 25px;
+            padding: 14px 28px;
             text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            margin-top: 10px;
-            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
-            font-size: 15px;
+            border-radius: 10px;
+            font-weight: 900;
+            margin-top: 15px;
+            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.5);
+            font-size: 17px;
+            text-transform: uppercase;
         }
         .btn:hover { background: #16a34a; }
     </style>
@@ -92,7 +116,7 @@
                 document.getElementById("countdown").innerText = timeLeft;
                 if (timeLeft <= 0) {
                     clearInterval(timerInterval);
-                    window.location.href = "https://t.me/YOUR_TELEGRAM_LINK"; // <--- APNA TELEGRAM LINK YAHAN DALNA
+                    window.location.href = "https://t.me/Mr_Perfect_R7";
                 }
             }, 1000);
         };
@@ -102,14 +126,14 @@
     <div class="container">
         <h1>DEXCUNNECT PLATFORM</h1>
         <h2>Presented by: Digital Ikbal Khan</h2>
-        <p>The ultimate global decentralized community platform designed for massive team growth, structured mentorship, and digital success.</p>
+        <p>The ultimate global decentralized community platform designed for <strong>massive team growth</strong>, structured mentorship, and digital success.</p>
         
         <div class="timer-box">
-            ⏳ Redirecting to Official Telegram in <span id="countdown">20</span> seconds...
+            ⏳ Redirecting to Telegram in <span id="countdown">20</span> seconds...
         </div>
 
         <div class="highlight">
-            🔥 Special Bonus: Free Meta Ads Setup & Full Team Support for New Members!
+            🔥 Special Bonus: Free Meta Ads Setup & Full Team Support!
         </div>
 
         <div class="features-box">
@@ -123,7 +147,7 @@
         </div>
 
         <p>If page does not redirect automatically, click below:</p>
-        <a href="https://t.me/YOUR_TELEGRAM_LINK" class="btn">Join Telegram Channel Now 🚀</a>
+        <a href="https://t.me/Mr_Perfect_R7" class="btn">Join Telegram Channel Now 🚀</a>
     </div>
 </body>
 </html>
