@@ -60,24 +60,37 @@
             margin-bottom: 20px;
         }
         .brand-box h2 {
-            color: #ffffff;
-            font-size: 20px;
+            font-size: 22px;
             letter-spacing: 1px;
-            font-weight: 800;
+            font-weight: 900;
             text-transform: uppercase;
         }
-        h1 {
-            font-size: 22px;
+        .brand-box h2 span.white {
+            color: #ffffff;
+        }
+        .brand-box h2 span.yellow {
             color: #ffaa00;
+        }
+        h1 {
+            font-size: 24px;
             font-weight: 900;
             margin-bottom: 5px;
             text-transform: uppercase;
+        }
+        h1 span.white {
+            color: #ffffff;
+        }
+        h1 span.yellow {
+            color: #ffaa00;
         }
         .sub-heading {
             font-size: 14px;
             color: #cccccc;
             margin-bottom: 25px;
             font-weight: 700;
+        }
+        .sub-heading span {
+            color: #ffaa00;
         }
         .btn-join {
             display: block;
@@ -183,15 +196,15 @@
 
         <!-- Brand Box -->
         <div class="brand-box">
-            <h2>TEAM DIGITAL IKBAL KHAN</h2>
+            <h2><span class="white">TEAM</span> <span class="yellow">DIGITAL IKBAL</span></h2>
         </div>
 
         <!-- Main Title -->
-        <h1>TEAM DIGITAL IKBAL KHAN</h1>
-        <div class="sub-heading">Daily Referral & High Income Guidance<br>By TEAM DIGITAL IKBAL KHAN</div>
+        <h1><span class="white">TEAM DIGITAL</span> <span class="yellow">IKBAL KHAN</span></h1>
+        <div class="sub-heading">Daily Referral & High Income Support<br>By <span>TEAM DIGITAL IKBAL KHAN</span></div>
 
-        <!-- Call to Action Button -->
-        <a href="https://t.me/Mr_Perfect_R7" class="btn-join" id="joinBtn">JOIN TELEGRAM FREE</a>
+        <!-- Call to Action Button with Telegram Group Link -->
+        <a href="https://t.me/+yXKkq7PtETpkZjE1" class="btn-join" id="joinBtn">JOIN TELEGRAM FREE</a>
         
         <div class="redirect-text" id="timerText">Redirecting in 4 seconds...</div>
 
@@ -211,7 +224,7 @@
             </div>
         </div>
 
-        <!-- Features List -->
+        <!-- Features List with Dexconnect & High Income details -->
         <div class="features-box">
             <div class="feature-item">
                 <div class="feature-icon">💰</div>
@@ -250,7 +263,7 @@
             </div>
         </div>
 
-        <a href="https://t.me/Mr_Perfect_R7" class="btn-join">JOIN TELEGRAM FREE</a>
+        <a href="https://t.me/+yXKkq7PtETpkZjE1" class="btn-join">JOIN TELEGRAM FREE</a>
 
         <div class="footer-note">
             Please verify all offers, terms and conditions before participating.
@@ -258,15 +271,15 @@
     </div>
 
     <script>
-        // Auto redirect timer simulation to Telegram
+        // Auto redirect timer simulation to Telegram Group
         let timeLeft = 4;
         const timerText = document.getElementById('timerText');
-        const targetUrl = "https://t.me/Mr_Perfect_R7";
+        const targetUrl = "https://t.me/+yXKkq7PtETpkZjE1";
 
         const countdown = setInterval(() => {
             timeLeft--;
             timerText.innerText = `Redirecting in ${timeLeft} seconds...`;
-            if (timeLeft <= 0) {
+            if (timeLeft <=.0) { // handled properly below
                 clearInterval(countdown);
                 window.location.href = targetUrl;
             }
