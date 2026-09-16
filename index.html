@@ -3,253 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIGITAL IKBAL KHAN - DEXCUNNECT Community</title>
+    <title>Team Digital Ikbal Khan - Dexconnect</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #0b0614;
-            background: linear-gradient(135deg, #0b0614, #1a0b2e);
-            color: #ffffff;
+        * {
             margin: 0;
-            padding: 10px;
-            text-align: center;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .container {
-            max-width: 480px;
-            margin: 15px auto;
-            background: #140924;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
-            border: 1px solid rgba(245, 158, 11, 0.3);
-        }
-        .badges {
+        body {
+            background-color: #0d061a;
+            color: #ffffff;
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-bottom: 15px;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
         }
-        .badge {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 6px 12px;
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background: linear-gradient(135deg, #15092a 0%, #090314 100%);
+            border: 2px solid #ffaa00;
+            border-radius: 24px;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(255, 170, 0, 0.2);
+        }
+        .badge-verified {
+            display: inline-block;
+            background: rgba(46, 204, 113, 0.15);
+            color: #2ecc71;
+            border: 1px solid #2ecc71;
+            padding: 6px 15px;
             border-radius: 20px;
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .badge-verified { color: #22c55e; border-color: rgba(34, 197, 94, 0.4); }
-        .badge-free { color: #f59e0b; border-color: rgba(245, 158, 11, 0.4); }
-
-        .title-card {
-            background: linear-gradient(135deg, #1f1035, #2d124f);
-            border: 1px solid rgba(168, 85, 247, 0.3);
-            padding: 18px;
-            border-radius: 14px;
-            margin-bottom: 15px;
-            box-shadow: inset 0 1px 1px rgba(255,255,255,0.1);
-        }
-        h1 { 
-            color: #facc15; 
-            font-size: 20px; 
-            font-weight: 900; 
-            margin: 0 0 5px 0; 
-            text-transform: uppercase; 
-            letter-spacing: 0.5px;
-        }
-        .subtitle { 
-            color: #cbd5e1; 
-            font-size: 13px; 
-            font-weight: 600; 
-            margin: 0; 
-        }
-
-        .btn-main {
-            display: block;
-            background: linear-gradient(90deg, #f97316, #eab308);
-            color: #000000;
-            padding: 16px;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: 900;
-            font-size: 16px;
-            text-transform: uppercase;
-            box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
-            margin: 15px 0 10px 0;
-            transition: 0.2s;
-        }
-        .btn-main:active { transform: scale(0.98); }
-
-        .timer-text {
-            color: #94a3b8;
             font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 15px;
+            font-weight: 700;
+            margin-bottom: 10px;
         }
-        .timer-text span {
-            color: #f59e0b;
+        .badge-free {
+            display: inline-block;
+            background: rgba(255, 170, 0, 0.15);
+            color: #ffaa00;
+            border: 1px solid #ffaa00;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .brand-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 170, 0, 0.4);
+            border-radius: 16px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .brand-box h2 {
+            color: #ffffff;
+            font-size: 22px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: 24px;
+            color: #ffaa00;
+            font-weight: 800;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .sub-heading {
+            font-size: 15px;
+            color: #cccccc;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .btn-join {
+            display: block;
+            width: 100%;
+            background: linear-gradient(90deg, #ff8800, #ffaa00);
+            color: #000000;
+            font-weight: 800;
+            font-size: 16px;
+            padding: 15px;
+            border-radius: 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(255, 170, 0, 0.4);
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+        .btn-join:hover {
+            transform: scale(1.02);
+        }
+        .redirect-text {
+            font-size: 12px;
+            color: #aaaaaa;
+            margin-bottom: 25px;
+        }
+        .stats-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .stat-card {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 12px 5px;
+            text-align: center;
+        }
+        .stat-card .title {
+            font-size: 10px;
+            color: #aaaaaa;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        .stat-card .value {
+            font-size: 15px;
+            color: #2ecc71;
             font-weight: 800;
         }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
-            margin-bottom: 15px;
-        }
-        .stat-box {
-            background: #1a0d2e;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 10px 5px;
-            border-radius: 10px;
-        }
-        .stat-label {
-            font-size: 10px;
-            color: #94a3b8;
-            text-transform: uppercase;
-            font-weight: 700;
-            margin-bottom: 3px;
-        }
-        .stat-value {
-            font-size: 14px;
-            color: #38bdf8;
-            font-weight: 900;
-        }
-
-        /* Free Meta Ads Setup Highlight Box */
-        .highlight-box {
-            background: rgba(34, 197, 94, 0.15);
-            border: 2px solid #22c55e;
-            padding: 14px;
-            border-radius: 12px;
-            margin-bottom: 12px;
+        .features-box {
+            background: rgba(25, 10, 45, 0.8);
+            border: 1px solid rgba(255, 170, 0, 0.3);
+            border-radius: 16px;
+            padding: 10px;
+            margin-bottom: 25px;
             text-align: left;
-            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.2);
         }
-        .highlight-box h3 {
-            color: #4ade80;
-            font-size: 15px;
-            font-weight: 900;
-            margin: 0 0 5px 0;
-            text-transform: uppercase;
-        }
-        .highlight-box p {
-            color: #e2e8f0;
-            font-size: 12px;
-            font-weight: 600;
-            margin: 0;
-            line-height: 1.4;
-        }
-
-        .info-card {
-            background: #1a0d2e;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 12px 15px;
-            border-radius: 12px;
-            margin-bottom: 10px;
-            text-align: left;
+        .feature-item {
             display: flex;
             align-items: flex-start;
-            gap: 12px;
+            padding: 12px 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
-        .info-icon {
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+        .feature-icon {
             font-size: 20px;
-            background: rgba(255,255,255,0.05);
-            padding: 8px;
-            border-radius: 10px;
-            margin-top: 2px;
+            margin-right: 12px;
+            min-width: 25px;
+            text-align: center;
         }
-        .info-content h3 {
-            color: #facc15;
-            font-size: 13px;
-            font-weight: 800;
-            margin: 0 0 3px 0;
+        .feature-content h4 {
+            font-size: 14px;
+            color: #ffaa00;
+            margin-bottom: 3px;
+            font-weight: 700;
         }
-        .info-content p {
-            color: #94a3b8;
-            font-size: 11px;
-            font-weight: 600;
-            margin: 0;
+        .feature-content p {
+            font-size: 12px;
+            color: #bbbbbb;
             line-height: 1.4;
         }
+        .footer-note {
+            font-size: 11px;
+            color: #777777;
+            margin-top: 15px;
+        }
     </style>
-    <script>
-        // 20 Seconds Timer to Telegram Redirect
-        let timeLeft = 20;
-        window.onload = function() {
-            let timerInterval = setInterval(function() {
-                timeLeft--;
-                document.getElementById("countdown").innerText = timeLeft;
-                if (timeLeft <= 0) {
-                    clearInterval(timerInterval);
-                    window.location.href = "https://t.me/Mr_Perfect_R7";
-                }
-            }, 1000);
-        };
-    </script>
 </head>
 <body>
+
     <div class="container">
-        <!-- Top Badges -->
-        <div class="badges">
-            <div class="badge badge-verified">✔ VERIFIED CHANNEL</div>
-            <div class="badge badge-free">👑 FREE TO JOIN</div>
+        <!-- Badges -->
+        <div>
+            <span class="badge-verified">✔ VERIFIED CHANNEL</span>
+            <span class="badge-free">👑 FREE TO JOIN</span>
         </div>
 
-        <!-- Main Title Card -->
-        <div class="title-card">
-            <h1>DIGITAL IKBAL KHAN</h1>
-            <p class="subtitle">Dexcunnect Platform & Team Support</p>
+        <!-- Brand Box -->
+        <div class="brand-box">
+            <h2>TEAM DIGITAL IKBAL KHAN</h2>
         </div>
 
-        <!-- Telegram Action Button -->
-        <a href="https://t.me/Mr_Perfect_R7" class="btn-main">JOIN TELEGRAM FREE</a>
+        <!-- Main Title -->
+        <h1>TEAM DIGITAL IKBAL KHAN</h1>
+        <div class="sub-heading">Daily Referral & High Income Guidance<br>By TEAM DIGITAL IKBAL KHAN</div>
 
-        <!-- Timer -->
-        <div class="timer-text">
-            Redirecting to Telegram in <span id="countdown">20</span> seconds...
-        </div>
+        <!-- Call to Action Button with Telegram Link & Pre-filled Message -->
+        <a href="https://t.me/Mr_Perfect_R7?text=Hello%20Sir,%20I%20am%20interested%20in%20Dexconnect.%20Please%20share%20the%20complete%20details,%20guidance,%20and%20session%20timing%20so%20that%20I%20can%20join." class="btn-join" id="joinBtn">JOIN COMMUNITY FREE</a>
+        
+        <div class="redirect-text" id="timerText">Redirecting in 4 seconds...</div>
 
-        <!-- Stats Boxes -->
+        <!-- Stats Grid -->
         <div class="stats-grid">
-            <div class="stat-box">
-                <div class="stat-label">Members</div>
-                <div class="stat-value">3,540+</div>
+            <div class="stat-card">
+                <div class="title">MEMBERS</div>
+                <div class="value">3,500+</div>
             </div>
-            <div class="stat-box">
-                <div class="stat-label">Support</div>
-                <div class="stat-value">DAILY</div>
+            <div class="stat-card">
+                <div class="title">SUPPORT</div>
+                <div class="value">DAILY</div>
             </div>
-            <div class="stat-box">
-                <div class="stat-label">Join</div>
-                <div class="stat-value">FREE</div>
-            </div>
-        </div>
-
-        <!-- FREE META ADS SETUP HIGHLIGHT -->
-        <div class="highlight-box">
-            <h3>🎁 100% Free Meta Ads Setup</h3>
-            <p>Get complete, professional guidance and direct campaign configuration setup support from Digital Ikbal Khan absolutely free!</p>
-        </div>
-
-        <!-- Feature Card 1 -->
-        <div class="info-card">
-            <div class="info-icon">🚀</div>
-            <div class="info-content">
-                <h3>4x4 Matrix & 100% Referral Income</h3>
-                <p>Advanced structured community placement, direct peer-to-peer rewards, and global team spillover system.</p>
+            <div class="stat-card">
+                <div class="title">JOIN</div>
+                <div class="value" style="color: #ffaa00;">FREE</div>
             </div>
         </div>
 
-        <!-- Feature Card 2 -->
-        <div class="info-card">
-            <div class="info-icon">💬</div>
-            <div class="info-content">
-                <h3>Daily Mentorship & Guidance</h3>
-                <p>Full personal assistance, team growth strategies, and direct support shared daily in the Telegram channel.</p>
+        <!-- Features List -->
+        <div class="features-box">
+            <div class="feature-item">
+                <div class="feature-icon">💰</div>
+                <div class="feature-content">
+                    <h4>Daily Referral & High Income</h4>
+                    <p>Daily income growth updates aur expert strategy support.</p>
+                </div>
             </div>
+            <div class="feature-item">
+                <div class="feature-icon">🚀</div>
+                <div class="feature-content">
+                    <h4>Dexconnect System Guidance</h4>
+                    <p>Dexconnect decentralized technology ki complete step-by-step jankari.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📢</div>
+                <div class="feature-content">
+                    <h4>Ads Fund Support</h4>
+                    <p>Meta Ads campaign run karne ke liye proper guidance aur support.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🛠️</div>
+                <div class="feature-content">
+                    <h4>Free Ads Setup Assistance</h4>
+                    <p>Campaign structure aur optimization mein puri sahayata.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔒</div>
+                <div class="feature-content">
+                    <h4>100% Free Joining</h4>
+                    <p>Community mein judne ke liye koi hidden charge nahi hai.</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://t.me/Mr_Perfect_R7?text=Hello%20Sir,%20I%20am%20interested%20in%20Dexconnect.%20Please%20share%20the%20complete%20details,%20guidance,%20and%20session%20timing%20so%20that%20I%20can%20join." class="btn-join">JOIN COMMUNITY FREE</a>
+
+        <div class="footer-note">
+            Please verify all offers, terms and conditions before participating.
         </div>
     </div>
+
+    <script>
+        // Auto redirect timer simulation to Telegram
+        let timeLeft = 4;
+        const timerText = document.getElementById('timerText');
+        const targetUrl = "https://t.me/Mr_Perfect_R7?text=Hello%20Sir,%20I%20am%20interested%20in%20Dexconnect.%20Please%20share%20the%20complete%20details,%20guidance,%20and%20session%20timing%20so%20that%20I%20can%20join.";
+
+        const countdown = setInterval(() => {
+            timeLeft--;
+            timerText.innerText = `Redirecting in ${timeLeft} seconds...`;
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                window.location.href = targetUrl;
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
