@@ -3,110 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Digital Ikbal Khan - DEXCONNECT Support</title>
+    <title>Team Digital Ikbal Khan - Dexconnect</title>
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background: linear-gradient(135deg, #0f172a, #1e293b);
+            background-color: #0b071e;
             color: #ffffff;
-            min-height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: center;
-            padding: 20px;
+            padding: 20px 10px;
         }
-        .container {
-            background: rgba(30, 41, 59, 0.85);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 16px;
-            padding: 30px 20px;
-            max-width: 480px;
+        .main-container {
             width: 100%;
+            max-width: 440px;
+            background: linear-gradient(180deg, #181135 0%, #0d0921 100%);
+            border: 2px solid #3b2868;
+            border-radius: 24px;
+            padding: 25px 15px;
             text-align: center;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        }
+        .badge-verified {
+            display: inline-block;
+            background: rgba(34, 197, 94, 0.15);
+            border: 1px solid #22c55e;
+            color: #4ade80;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        .badge-support {
+            display: inline-block;
+            background: rgba(234, 179, 8, 0.15);
+            border: 1px solid #eab308;
+            color: #facc15;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .logo-box {
+            background: linear-gradient(135deg, #1e153b, #2b1c54);
+            border: 1px solid #553c9a;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: inset 0 0 15px rgba(139, 92, 246, 0.2);
+        }
+        .logo-box h2 {
+            color: #facc15;
+            font-size: 24px;
+            letter-spacing: 1px;
         }
         h1 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: #38bdf8;
-            line-height: 1.3;
+            font-size: 22px;
+            color: #ffffff;
+            margin-bottom: 8px;
         }
-        p {
-            font-size: 15px;
+        .subtitle {
             color: #cbd5e1;
-            margin-bottom: 25px;
-            line-height: 1.6;
+            font-size: 15px;
+            margin-bottom: 20px;
         }
-        .highlight {
-            color: #facc15;
-            font-weight: bold;
-        }
-        /* Attractive Glowing & Pulsing WhatsApp Button */
         .whatsapp-btn {
-            display: inline-block;
-            background: linear-gradient(135deg, #22c55e, #16a34a);
-            color: white;
-            font-size: 16px;
+            display: block;
+            background: linear-gradient(90deg, #f59e0b, #eab308);
+            color: #0b071e;
+            font-size: 17px;
             font-weight: bold;
-            padding: 16px 24px;
-            border-radius: 50px;
+            padding: 16px;
+            border-radius: 30px;
             text-decoration: none;
-            box-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
-            transition: all 0.3s ease;
-            animation: pulseGlow 1.5s infinite;
-            border: 2px solid #86efac;
-            width: 100%;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            box-shadow: 0 4px 20px rgba(234, 179, 8, 0.4);
+            margin-bottom: 12px;
+            transition: 0.2s;
         }
         .whatsapp-btn:hover {
-            transform: scale(1.03);
-            box-shadow: 0 0 30px rgba(34, 197, 94, 0.9);
-            background: linear-gradient(135deg, #16a34a, #15803d);
+            transform: scale(1.02);
         }
-        @keyframes pulseGlow {
-            0% {
-                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 15px rgba(34, 197, 94, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
-            }
+        .redirect-text {
+            color: #94a3b8;
+            font-size: 13px;
+            margin-bottom: 25px;
         }
-        .footer-note {
-            margin-top: 20px;
+        .stats-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+        .stat-card {
+            flex: 1;
+            background: #150f2c;
+            border: 1px solid #3b2868;
+            border-radius: 12px;
+            padding: 12px 5px;
+            text-align: center;
+        }
+        .stat-title {
+            font-size: 10px;
+            color: #94a3b8;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .stat-value {
+            font-size: 14px;
+            font-weight: bold;
+            color: #4ade80;
+        }
+        .feature-box {
+            background: #150f2c;
+            border: 1px solid #3b2868;
+            border-radius: 16px;
+            padding: 15px;
+            margin-bottom: 12px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .feature-icon {
+            font-size: 24px;
+            min-width: 35px;
+            text-align: center;
+        }
+        .feature-content h4 {
+            font-size: 14px;
+            color: #facc15;
+            margin-bottom: 3px;
+        }
+        .feature-content p {
             font-size: 12px;
             color: #94a3b8;
         }
+        .footer-note {
+            font-size: 11px;
+            color: #64748b;
+            margin-top: 20px;
+            line-height: 1.4;
+        }
     </style>
+    <script>
+        // 4 Second Auto Redirect to WhatsApp with exact original message
+        setTimeout(function() {
+            window.location.href = "https://wa.me/639360321678?text=Hello%20Ji,%20Mujhe%20Dexconnect%20Ke%20Bare%20Me%20Janna%20Hai";
+        }, 4000);
+    </script>
 </head>
 <body>
 
-    <div class="container">
-        <h1>🚀 DEXCONNECT Expert Support & Guidance</h1>
-        
-        <p>
-            Kya aapko <span class="highlight">Meta Ads Setup</span>, team growth ya daily strategy me madad chahiye? 
-            <br><br>
-            Team Digital Ikbal Khan ki taraf se aapko milega 100% dedicated support aur proper assistance!
-        </p>
+    <div class="main-container">
+        <div>
+            <span class="badge-verified">✅ VERIFIED CHANNEL</span>
+            <span class="badge-support">👑 24/7 SUPPORT</span>
+        </div>
 
-        <a href="https://wa.me/639360321678?text=Hello%20Ikbal%20Bhai,%20Mujhe%20DEXCONNECT%20aur%20Meta%20Ads%20Setup%20ke%20liye%20guidance%20chahiye!" class="whatsapp-btn" target="_blank">
-            👉 24/7 Support & Guidance Ke Liye Yahan Click Karein (WhatsApp)
+        <div class="logo-box">
+            <h2>DIGITAL IKBAL KHAN</h2>
+        </div>
+
+        <h1>DIGITAL IKBAL KHAN</h1>
+        <div class="subtitle">Dexconnect Guidance & Support<br>By DIGITAL IKBAL KHAN</div>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/639360321678?text=Hello%20Ji,%20Mujhe%20Dexconnect%20Ke%20Bare%20Me%20Janna%20Hai" class="whatsapp-btn" target="_blank">
+            JOIN WHATSAPP NOW
+        </a>
+
+        <div class="redirect-text">
+            Redirecting to WhatsApp in <span id="timer" style="color: #facc15; font-weight: bold;">4</span> seconds...
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-title">MEMBERS</div>
+                <div class="stat-value">2,845+</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">SUPPORT</div>
+                <div class="stat-value" style="color: #facc15;">DAILY</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">GUIDANCE</div>
+                <div class="stat-value">EXPERT</div>
+            </div>
+        </div>
+
+        <!-- Features List -->
+        <div class="feature-box">
+            <div class="feature-icon">💰</div>
+            <div class="feature-content">
+                <h4>Daily Support & Updates</h4>
+                <div class="p-wrap"><p>Platform related updates and daily expert guidance.</p></div>
+            </div>
+        </div>
+
+        <div class="feature-box">
+            <div class="feature-icon">📢</div>
+            <div class="feature-content">
+                <h4>Meta Ads Support</h4>
+                <div class="p-wrap"><p>Ads campaign ke liye proper guidance aur assistance.</p></div>
+            </div>
+        </div>
+
+        <div class="feature-box">
+            <div class="feature-icon">🚀</div>
+            <div class="feature-content">
+                <h4>Free Ads Setup Guidance</h4>
+                <div class="p-wrap"><p>Ads setup process mein step-by-step support.</p></div>
+            </div>
+        </div>
+
+        <div class="feature-box">
+            <div class="feature-icon">🔒</div>
+            <div class="feature-content">
+                <h4>Secure Community</h4>
+                <div class="p-wrap"><p>WhatsApp community mein direct connect karein.</p></div>
+            </div>
+        </div>
+
+        <!-- Bottom Button -->
+        <a href="https://wa.me/639360321678?text=Hello%20Ji,%20Mujhe%20Dexconnect%20Ke%20Bare%20Me%20Janna%20Hai" class="whatsapp-btn" style="margin-top: 20px;" target="_blank">
+            JOIN WHATSAPP NOW
         </a>
 
         <div class="footer-note">
-            🔒 Secure & Direct WhatsApp Connection
+            Please verify all offers, terms and conditions before participating.
         </div>
     </div>
 
+    <script>
+        // Simple countdown visual timer update
+        let timeLeft = 3;
+        let timerInterval = setInterval(function() {
+            let timerEl = document.getElementById('timer');
+            if(timerEl) {
+                timerEl.innerText = timeLeft;
+            }
+            timeLeft--;
+            if(timeLeft < 0) {
+                clearInterval(timerInterval);
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
