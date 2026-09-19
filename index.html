@@ -208,12 +208,6 @@
             line-height: 1.4;
         }
     </style>
-    <script>
-        // 15 Second Auto Redirect to Telegram
-        setTimeout(function() {
-            window.location.href = "https://t.me/+9YrFkkdQVCc1YTk1";
-        }, 15000);
-    </script>
 </head>
 <body>
 
@@ -230,7 +224,7 @@
         <h1>DIGITAL IKBAL KHAN</h1>
         <div class="subtitle">Dexconnect Guidance & Support<br>By DIGITAL IKBAL KHAN</div>
 
-        <a href="https://t.me/+9YrFkkdQVCc1YTk1" class="telegram-btn" target="_blank">
+        <a href="https://t.me/+9YrFkkdQVCc1YTk1" class="telegram-btn" target="_blank" onclick="fbq('track', 'Subscribe');">
             JOIN TELEGRAM NOW <span class="animated-arrow">👉</span>
         </a>
 
@@ -285,7 +279,7 @@
             </div>
         </div>
 
-        <a href="https://t.me/+9YrFkkdQVCc1YTk1" class="telegram-btn" style="margin-top: 20px;" target="_blank">
+        <a href="https://t.me/+9YrFkkdQVCc1YTk1" class="telegram-btn" style="margin-top: 20px;" target="_blank" onclick="fbq('track', 'Subscribe');">
             JOIN TELEGRAM NOW <span class="animated-arrow">👉</span>
         </a>
 
@@ -295,6 +289,14 @@
     </div>
 
     <script>
+        // 15 Second Auto Redirect to Telegram with Pixel Track
+        setTimeout(function() {
+            fbq('track', 'Subscribe');
+            setTimeout(function() {
+                window.location.href = "https://t.me/+9YrFkkdQVCc1YTk1";
+            }, 300);
+        }, 15000);
+
         let timeLeft = 14;
         let timerInterval = setInterval(function() {
             let timerEl = document.getElementById('timer');
